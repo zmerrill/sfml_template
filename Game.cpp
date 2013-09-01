@@ -9,6 +9,7 @@ Game::Game()
 : mWindow(sf::VideoMode(640, 480), "World", sf::Style::Close)
 , mWorld(mWindow)
 {
+	mWindow.setKeyRepeatEnabled(false);
 }
 
 void Game::run()
@@ -34,24 +35,18 @@ void Game::run()
 
 void Game::processEvents()
 {
+	CommandQueue& commands = mWorld.getCommandQueue();
+
 	sf::Event event;
 	while (mWindow.pollEvent(event))
 	{
-		switch (event.type)
-		{
-			case sf::Event::KeyPressed:
-				handlePlayerInput(event.key.code, true);
-				break;
+		mPlayer.handleEvent(event, commands);
 
-			case sf::Event::KeyReleased:
-				handlePlayerInput(event.key.code, false);
-				break;
-
-			case sf::Event::Closed:
-				mWindow.close();
-				break;
-		}
+		if (event.type == sf::Event::Closed)
+			mWindow.close();
 	}
+
+	mPlayer.handleRealtimeInput(commands);
 }
 
 void Game::update(sf::Time elapsedTime)
@@ -66,8 +61,4 @@ void Game::render()
 
 	mWindow.setView(mWindow.getDefaultView());
 	mWindow.display();
-}
-
-void Game::handlePlayerInput(sf::Keyboard::Key, bool)
-{
 }

@@ -24,3 +24,15 @@ void Airplane::drawCurrent(sf::RenderTarget& target, sf::RenderStates states) co
 {
 	target.draw(mSprite, states);
 }
+
+unsigned int Airplane::getCategory() const
+{
+	switch (mType)
+	{
+		case Eagle:
+			return Category::PlayerAirplane;
+
+		default:
+			return Category::EnemyAirplane;
+	}
+}
