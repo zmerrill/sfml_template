@@ -1,7 +1,9 @@
-#include "game.hpp"
-#include "ResourceHolder.hpp"
+//#include "game.hpp"
+//#include "ResourceHolder.hpp"
 
-#include <SFML/Graphics.hpp>
+#include "Application.hpp"
+
+//#include <SFML/Graphics.hpp>
 #include <stdexcept>
 #include <iostream>
 #include <MapLoader.h>
@@ -49,7 +51,7 @@ int main()
 {
 	try
 	{
-		Game game;
+		Application game;
 		game.run();
 	}
 	catch(std::exception& e)

@@ -1,26 +1,36 @@
-﻿Build started 9/1/2013 1:17:04 AM.
+﻿Build started 9/2/2013 2:48:21 AM.
      1>Project "C:\SFML_Projects\SFML_Book_Chapter1\SFML_Book_Chapter1\SFML_Book_Chapter1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\SFML-2.1\include" /IC:\TmxMapLoader\TmxMapLoader\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D SFML_STATIC /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp
-         Game.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\SFML-2.1\include" /IC:\TmxMapLoader\TmxMapLoader\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D SFML_STATIC /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\SFML_Projects\SFML_Book_Chapter1\Debug\SFML_Book_Chapter1.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\SFML-2.1\lib" /LIBPATH:C:\TmxMapLoader\TmxMapLoader\lib "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" "sfml-network-s-d.lib" "sfml-audio-s-d.lib" zdll.lib "sfml-main-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\SFML_Projects\SFML_Book_Chapter1\Debug\SFML_Book_Chapter1.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\SFML_Projects\SFML_Book_Chapter1\Debug\SFML_Book_Chapter1.lib" /MACHINE:X86 Debug\MapLoaderPrivate.obj
          Debug\MapLoaderPublic.obj
          Debug\pugixml.obj
          Debug\QuadTreeNode.obj
          Debug\Airplane.obj
+         Debug\Application.obj
          Debug\Command.obj
          Debug\CommandQueue.obj
          Debug\Entity.obj
          Debug\Game.obj
+         Debug\GameState.obj
+         Debug\LoadingState.obj
          Debug\Main.obj
+         Debug\MenuState.obj
+         Debug\ParallelTask.obj
+         Debug\PauseState.obj
          Debug\Player.obj
          Debug\SceneNode.obj
          Debug\SpriteNode.obj
+         Debug\State.obj
+         Debug\StateStack.obj
+         Debug\TitleState.obj
+         Debug\Utility.obj
          Debug\World.obj
          SFML_Book_Chapter1.vcxproj -> C:\SFML_Projects\SFML_Book_Chapter1\Debug\SFML_Book_Chapter1.exe
      1>Done Building Project "C:\SFML_Projects\SFML_Book_Chapter1\SFML_Book_Chapter1\SFML_Book_Chapter1.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.78
+Time Elapsed 00:00:07.87
