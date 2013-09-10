@@ -1,5 +1,5 @@
-#ifndef TITLE_STATE_HPP
-#define TITLE_STATE_HPP
+#ifndef TITLESTATE_HPP
+#define TITLESTATE_HPP
 
 #include "State.hpp"
 
@@ -25,4 +25,4 @@ class TitleState : public State
 		sf::Time			mTextEffectTime;
 };
 
-#endif // TITLE_STATE_HPP
+#endif // TITLESTATE_HPP

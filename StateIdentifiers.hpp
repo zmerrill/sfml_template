@@ -1,5 +1,5 @@
-#ifndef STATE_IDENTIFIERS_HPP
-#define STATE_IDENTIFIERS_HPP
+#ifndef STATEIDENTIFIERS_HPP
+#define STATEIDENTIFIERS_HPP
 
 
 namespace States
@@ -11,8 +11,10 @@ namespace States
 		Menu,
 		Game,
 		Loading,
-		Pause
+		Pause,
+		Settings,
+		GameOver
 	};
 }
 
-#endif // STATE_IDENTIFIERS_HPP
+#endif // STATEIDENTIFIERS_HPP

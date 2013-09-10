@@ -1,5 +1,5 @@
-#ifndef GAME_STATE_HPP
-#define GAME_STATE_HPP
+#ifndef GAMESTATE_HPP
+#define GAMESTATE_HPP
 
 #include "State.hpp"
 #include "World.hpp"
@@ -24,4 +24,4 @@ class GameState : public State
 		Player&				mPlayer;
 };
 
-#endif // GAME_STATE_HPP
+#endif // GAMESTATE_HPP
